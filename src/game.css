@@ -1,0 +1,94 @@
+.game-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(13, 104, 13);
+    width: 50%;
+    height: 70vh;
+    border-radius: 200px;
+    border: #1b1b1b 8px solid;
+    margin-top: 10px;
+}
+
+.dealers-cards-div {
+    margin: -16px 0px -10px 0px;
+}
+
+.card-img {
+    max-height: 20vh;
+    width: auto;
+}
+
+.sideways-double-card {
+    max-height: 20vh;
+    width: auto;
+    transform: rotate(90deg);
+}
+
+h1 {
+    color: aliceblue;
+    text-align: center;
+}
+.locked-bet-img {
+    height: 10vh;
+    cursor: pointer;
+    border-radius: 180px;
+}
+.locked-bet-img:hover {
+    background-color: rgb(94, 248, 23);
+}
+.empty-chip-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 20px;
+}
+.locked-bet-amount {
+    position: absolute;
+    z-index: 10;
+    background-color: rgba(248, 250, 248, 0.849);
+    padding: 2px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.count {
+    height: 47px;
+    font-size: 36px;
+}
+.chip-or-message {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+
+    .card-img {
+        max-height: 14vh;
+    }
+
+    .count {
+        height: 28px;
+        font-size: 24px;
+    }
+
+    .result-message {
+        font-size: 18px;
+    }
+
+    .chip-or-message {
+        height: 8vh;
+        margin: 5px;
+    }
+
+    .sideways-double-card {
+        max-height: 14vh;
+    }
+
+    .result-message {
+        margin: 0px;
+    }
+}

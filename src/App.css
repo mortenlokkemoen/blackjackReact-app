@@ -1,0 +1,202 @@
+body {
+  margin: 0px;
+  background-color: #2e2e2e;
+  font-family: 'Secular One', sans-serif;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 48px;
+}
+.app-header {
+  margin-top: 15px;
+  width: 100%;
+
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+p, .pending-bet {
+  color: aliceblue;
+}
+
+
+.game-result-div {
+  height: 10vh;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 25px;
+}
+
+.betting-options {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+}
+
+.betting-option {
+  border-radius: 4px;
+  margin-left: 5px;
+  height: 4vh;
+  border: none;
+  font-size: 14px;
+  width: 5.3vw;
+}
+
+.inner-betting-options {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bet-button {
+  height: 100%;
+  border-radius: 50px;
+}
+
+.bet-button:hover {
+  background-color: #5ef8175b;
+  border-radius: 60px;
+  cursor: pointer;
+}
+
+.bet-button:active {
+  background-color: #5ef8175b;
+  border-radius: 60px;
+  cursor: pointer;
+}
+
+.betting-option:focus, .reset-button:focus {
+  outline:none;
+}
+
+.betting-option:active {
+  border-color: transparent !important;
+  outline:none;
+}
+
+.reset-button {
+  margin-right: 10px;
+  height: 4vh;
+  border-radius: 4px;
+}
+
+.pending-bet {
+  font-size: 20px;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chip-count {
+  font-size: 36px;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.205);
+  padding-left: 10px;
+  border-radius: 6px;
+}
+.chip-number {
+  font-size: 48px;
+  margin: 0px;
+  margin-left: 5px;
+  margin-right: 15px;
+  width: 20vh;
+  text-align: left;
+}
+#ready-to-start {
+  background-color: rgba(7, 201, 7, 0.932);
+  border: none;
+  cursor: pointer;
+}
+#not-ready {
+  color: rgb(180, 180, 180);
+}
+#attention-red {
+  color: rgba(231, 23, 23, 0.932);
+}
+
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  .pending-bet {
+      justify-content: space-between;
+  }
+  .app-header {
+      margin-top: 5px;
+      width: 100vw;
+      flex-direction: column;
+  }
+  .title {
+      font-size: 24px;
+  }
+  .chip-number {
+      font-size: 18px;
+      text-align: right;
+  }
+  .chip-count {
+      font-size: 18px;
+      width: 90vw;
+      justify-content: flex-start;
+      position: relative;
+  }
+
+  .pending-bet {
+      font-size: 12px;
+  }
+
+  .game-result-div {
+      height: auto;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding-top: 5px;
+      align-items: center;
+  }
+
+  .bet-button {
+      height: 50px;
+      border-radius: 60px;
+
+  }
+
+  .betting-option {
+      border-radius: 4px;
+      margin-left: 5px;
+      margin-top: 5px;
+      height: 4vh;
+      border: none;
+      font-size: 14px;
+      width: fit-content;
+      height: auto;
+  }
+
+  .inner-betting-options {
+      width: 100%;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+  }
+
+  .restart-button {
+      position: absolute;
+      right: 5px;
+      bottom: 4px;
+  }
+
+  .reset-button {
+      margin-right: 5px;
+      height: auto;
+  }
+}
